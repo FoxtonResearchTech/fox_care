@@ -46,6 +46,7 @@ dependencies:
   path_provider: ^2.0.11
   window_manager: ^0.4.3
   flutter_screenutil: ^5.9.3
+  custom_check_box: ^0.0.4
 
 
 dev_dependencies:

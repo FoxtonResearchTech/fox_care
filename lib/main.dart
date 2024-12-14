@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:foxcare_app/features/presentation/PharmaProducts/add_medicine.dart';
+import 'package:foxcare_app/features/presentation/PharmaProducts/pharmacy_gst_report.dart';
 import 'package:foxcare_app/features/presentation/pages/customerService/customer_chat_panel.dart';
 import 'package:window_manager/window_manager.dart';
 import 'package:foxcare_app/features/presentation/pages/patient_registration.dart';
@@ -97,7 +99,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(Duration(seconds: 2), () {
       // Navigate to the login page after 2 seconds
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => AdminChatPanel()),
+        MaterialPageRoute(builder: (context) => PharmacyGstReport()),
       );
     });
   }

@@ -40,12 +40,14 @@ class CustomTextField extends StatelessWidget {
   final String hintText;
   final bool obscureText;
   final TextEditingController? controller;
+  final Icon? icon;
 
   CustomTextField({
     Key? key,
     required this.hintText,
     this.obscureText = false,
     this.controller,
+    this.icon,
   }) : super(key: key);
 
   @override
@@ -65,16 +67,18 @@ class CustomTextField extends StatelessWidget {
           fontFamily: 'SanFrancisco',
         ),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(15.0),
+          borderRadius: BorderRadius.circular(10),
         ),
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(color: Colors.blue, width: 2.0),
-          borderRadius: BorderRadius.circular(15.0),
+          borderRadius: BorderRadius.circular(10),
         ),
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(color: Colors.lightBlue, width: 1),
-          borderRadius: BorderRadius.circular(15.0),
+          borderRadius: BorderRadius.circular(10),
         ),
+        suffixIcon: icon,
+        suffixIconColor: AppColors.secondary,
       ),
     );
   }
